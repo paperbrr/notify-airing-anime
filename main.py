@@ -6,7 +6,7 @@ from format_json import format_json
 import os
 
 url = 'https://www.livechart.me/feeds/episodes'
-webhook_token = 'placeholder'
+webhook_token = os.environ['WEBHOOKTOKEN']
 
 def modify_previous_data(action, data, data_type):
     file_path = 'previous_data.json'
